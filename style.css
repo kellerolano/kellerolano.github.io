@@ -1,11 +1,11 @@
 @font-face { font-family: 'headerfont';
              src: url('../fonts/VistaSlabLight.woff2') format('woff2'),
-				  url('../fonts/VistaSlabLight.woff') format('woff')		
+		  url('../fonts/VistaSlabLight.woff') format('woff')		
 }
 
 @font-face { font-family: 'textfont';
              src: url('../fonts/VistaSansLight.woff2') format('woff2'),
-				  url('../fonts/VistaSansLight.woff') format('woff')		
+		  url('../fonts/VistaSansLight.woff') format('woff')		
 }
 
 *{
