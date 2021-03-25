@@ -20,6 +20,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  
 }
 
 ::selection{
@@ -28,7 +29,6 @@ body{
 
 .wrapper{
   max-width: 600px;
-  max-height: 2000px;
   padding: 0 20px;
 }
 
@@ -97,7 +97,7 @@ body{
 .wrapper .parent-tab .content,
 .wrapper .child-tab .sub-content{
   max-height: 0px;
-  overflow: scroll;
+  overflow: auto;
   background: #fff;
   transition: all 0.4s ease;
 }
@@ -105,7 +105,7 @@ body{
 .header-tab input:checked ~ .content,
 .parent-tab input:checked ~ .content,
 .child-tab input:checked ~ .sub-content{
-  max-height: 100vh;
+  max-height: 200vh;
 }
 
 .header-tab.content p,h1,h2{
