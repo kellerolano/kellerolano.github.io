@@ -55,7 +55,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 15px;
+  padding: 70px 0 120px;
 }
 .wrapper{
   max-width: 600px;
@@ -137,7 +137,7 @@ body{
 }
 .parent-tab .content p,h1,h2,h3,h4,
 .child-tab .sub-content p,h1,h2,h3,h4{
-  padding: 8px 0;
+  padding: 10px 0 8px;
   line-height: 150%;
   color: #052F43;
 }
@@ -162,7 +162,7 @@ h4{
   padding: 0 0 5px;
 }
 .fi{
-  padding: 15px;
+  padding: 5px 12px;
   font-size: 14px;
   line-height: 150%;
   border-bottom: 0.3px solid #979797;
