@@ -1,52 +1,73 @@
+@media screen and (min-width:510px) { 
+.wrapper label span{
+  max-width: 450px;
+}
+.wrapper .child-tab label span{
+  max-width: 450px;	
+	}
+}
+@media screen and (max-width:510px) { 
+.wrapper label span{
+  max-width: 400px;
+}
+.wrapper .child-tab label span{
+  max-width: 400px;	
+	}
+}
+@media screen and (max-width:450px) { 
+.wrapper label span{
+  max-width: 300px;
+}
+.wrapper .child-tab label span{
+  max-width: 300px;	
+	}
+}
+@media screen and (max-width:360px) { 
+.wrapper label span{
+  max-width: 200px;
+}
+.wrapper .child-tab label span{
+  max-width: 200px;	
+	}
+}
 @font-face { font-family: 'headerfont';
              src: url('../fonts/VistaSlabLight.woff2') format('woff2'),
 				  url('../fonts/VistaSlabLight.woff') format('woff')		
 }
 
 @font-face { font-family: 'textfont';
+             src: url('../fonts/VistaSansMed.woff2') format('woff2'),
+				  url('../fonts/VistaSansMed.woff') format('woff')		
+}
+
+@font-face { font-family: 'textfont2';
              src: url('../fonts/VistaSansLight.woff2') format('woff2'),
 				  url('../fonts/VistaSansLight.woff') format('woff')		
 }
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'headerfont', sans-serif;
 }
-
 body{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  
+  padding: 0 15px;
 }
-
-::selection{
-  background: rgb(0,123,255,0.3);
-}
-
 .wrapper{
   max-width: 600px;
-  padding: 0 20px;
 }
-
 .wrapper .header-tab{
-  padding-bottom: 60px;
-  border-bottom: 1px solid grey; 
+  padding-bottom: 50px;
+  border-bottom: 0.3px solid #979797;
 }
-
-.wrapper .parent-tab,
-.wrapper .child-tab{
-  border-bottom: 1px solid grey;
-}
-
-.wrapper .header-tab label,
-.wrapper .parent-tab label,
-.wrapper .child-tab label{
+.wrapper .header-tab label
+{
   background: #FFFFFF;
-  padding: 20px 0px;
+  padding: 15px 0px;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -55,87 +76,97 @@ body{
   z-index: 99;
   transition: all 0.3s ease;
 }
-
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+  vertical-align: middle;
+  background: #FFFFFF;
+  padding: 15px 0px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+  border-bottom: 0.3px solid #979797;
+}
 .wrapper .header-tab label:hover,
 .wrapper .parent-tab label:hover{
   background: #FFFFFF;
 }
-
 .wrapper .header-tab span{
   font-size: 40px;
-  font-weight: 400; 
+  font-weight: 350;
+  padding: 0 0 30px;
 }
-
 .wrapper label span{
-  margin-right: -10px;
-  color: #072A85;
-  font-size: 17px;
-  font-weight: 400;
+  color: #052F43;
+  font-size: 20px;
+  font-weight: 700;
 }
-
 .wrapper .child-tab label span{
   line-height: 150%;
-  margin-right: -10px;
-  color: #505050;
-  font-size: 15px;
-  font-weight: 300;
+  color: #666058;
+  font-size: 18px;
+  font-weight: 700;
 }
-
 .parent-tab label .icon{
+  vertical-align: middle;
   height: 25px;
   width: 25px;
-  color: #007bff;
   background: url('../svg/secondary-plus.svg');
 }
-
-.wrapper .child-tab label .icon{
+.child-tab label .icon{
+  vertical-align: middle;
   height: 25px;
   width: 25px;
+  background: url('../svg/secondary-plus2.svg');
 }
-
 .wrapper .header .content,
 .wrapper .parent-tab .content,
 .wrapper .child-tab .sub-content{
   max-height: 0px;
   overflow: auto;
   background: #fff;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
-
 .header-tab input:checked ~ .content,
 .parent-tab input:checked ~ .content,
 .child-tab input:checked ~ .sub-content{
-  max-height: 200vh;
+  max-height: 250vh;
 }
-
-.header-tab.content p,h1,h2{
-  padding: 15px 20px;
-  font-family: 'headerfont', sans-serif;
-  font-size: 30px;
-}
-
-.parent-tab .content p,h1,h2,h3,
-.child-tab .sub-content p,h1,h2,h3{
-  padding-bottom: 15px;
-  font-family: 'textfont', sans-serif;
-  font-size: 13px;
+.parent-tab .content p,h1,h2,h3,h4,
+.child-tab .sub-content p,h1,h2,h3,h4{
+  padding: 8px 0;
   line-height: 150%;
-  color: #072A85;
+  color: #052F43;
 }
-
+p{
+	font-size: 12px;
+	ont-weight: 500;
+	font-family: 'textfont2', sans-serif;
+}
+h3{
+	font-size: 14px;
+	font-weight: 100;
+	font-family: 'textfont', sans-serif;
+}
+h4{
+	font-size: 13px;
+	font-weight: 50;
+	font-family: 'textfont', sans-serif;
+}
 .box{
-  background-color: #CDCACA;
-  color: #072A85;
+  background-color: #E0DFDD;
+  color: #052F43;
+  padding: 0 0 5px;
 }
-
 .fi{
   padding: 15px;
-  margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 150%;
+  border-bottom: 0.3px solid #979797;
 }
-
-input[type="radio"],
-input[type="checkbox"]{
+input[type="radio"]{
   display: none;
 }
