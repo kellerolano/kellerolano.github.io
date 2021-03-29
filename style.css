@@ -56,7 +56,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 70px 0 120px;
+  padding: 70px 7px 120px 7px;
 }
 .wrapper{
   max-width: 600px;
