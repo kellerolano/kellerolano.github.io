@@ -61,7 +61,7 @@ body{
   padding: 70px 12px 120px;
 }
 .wrapper{
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .wrapper .header-tab{
@@ -150,7 +150,7 @@ body{
 .header-tab .content.open,
 .parent-tab .content.open,
 .child-tab .sub-content.open {
-  max-height: 250vh;
+  max-height: 400vh;
 }
 .parent-tab .content p,h1,h2,h3,h4,
 .child-tab .sub-content p,h1,h2,h3,h4{
