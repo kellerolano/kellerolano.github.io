@@ -30,6 +30,8 @@
   max-width: 200px;	
 	}
 }
+.l-no-horizontal-scroll {overflow-x: hidden}
+
 @font-face { font-family: 'headerfont';
              src: url('./fonts/VistaSlabLight.woff2') format('woff2'),
 				  url('./fonts/VistaSlabLight.woff') format('woff')
