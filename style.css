@@ -150,7 +150,7 @@ body{
 .header-tab .content.open,
 .parent-tab .content.open,
 .child-tab .sub-content.open {
-  max-height: 400vh;
+  max-height: 600vh;
 }
 .parent-tab .content p,h1,h2,h3,h4,
 .child-tab .sub-content p,h1,h2,h3,h4{
